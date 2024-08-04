@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+body {
+    background: linear-gradient(to right, rgb(238, 10, 216),
+            rgb(5, 209, 246));
+    color: rgb(10, 10, 10);
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+
+}
+
+p {
+    text-align: center;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 70%;
+    border: #000;
+    box-shadow: #000 0;
+    margin-top: 0px;
+
+}
+
+.upload-image {
+    width: 700px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.upload-image input[type="file"] {
+    display: none;
+}
+
+.upload-image label {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #020b8e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.uploaded-image {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.uploaded-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    mask-image: linear-gradient(to edges#fff, rgba(255, 255, 255, 0));
+}
+
+.uploaded-image button {
+    padding: 10px 20px;
+    background-color: #020b8e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.uploaded-image .crop-options {
+    display: flex;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.crop-options .option {
+    width: 70px;
+    height: 70px;
+    margin: 0 10px;
+    background-color: #000;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.crop-options .option.original {
+    background-color: #fff;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.crop-options .option.original text {
+    width: 60px;
+    height: 60px;
+    margin: 9px;
+    margin-top: 2px;
+
+}
+
+.crop-options .option.heart {
+    background-color: #fff;
+    border: 3px solid black;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+.crop-options .option.heart img {
+    width: 60px;
+    height: 60px;
+    margin: 7px;
+
+
+}
+
+.crop-options .option.square {
+    background-color: #fff;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.crop-options .option.square img {
+    width: 55px;
+    height: 55px;
+    margin: 9px;
+
+}
+
+.crop-options .option.circle {
+    background-color: #fff;
+    border: 3px solid black;
+    overflow: hidden;
+    /* mask-image: linear-gradient(#fff, rgba(255,255,255,0)); */
+}
+
+.crop-options .option.circle img {
+    width: 60px;
+    height: 60px;
+    margin: 6px;
+
+}
+
+.crop-options .option.rectangle {
+    background-color: #fff;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.crop-options .option.rectangle img {
+    width: 65px;
+    height: 55px;
+    margin: 3px;
+    padding: 2px;
+
+}

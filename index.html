@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celebarare</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" type="image/jpg" href="favicon.png" />
+  </head>
+  <body>
+    <p>Add Image / Icon</p>
+    <div class="container">
+      <div class="upload-image">
+        <h1>Upload Image</h1>
+        <label for="fileInput">Choose From Device</label>
+        <input type="file" id="fileInput" accept="image/*" />
+        <div class="uploaded-image" style="display: none">
+          <img id="uploadedImage" src="" alt="Uploaded Image" />
+          <div class="crop-options">
+            <div class="option original" data-crop="original">
+              <strong>Original</strong>
+            </div>
+            <div class="option heart" data-crop="heart">
+              <img src="assets/frames/user_image_frame_1.png" />
+            </div>
+            <div class="option square" data-crop="square">
+              <img src="assets/frames/user_image_frame_2.png" />
+            </div>
+            <div class="option circle" data-crop="circle">
+              <img src="assets/frames/user_image_frame_3.png" />
+            </div>
+            <div class="option rectangle" data-crop="rectangle">
+              <img src="assets/frames/user_image_frame_4.png" />
+            </div>
+          </div>
+        
+          <button id="downloadImage">Download</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+ 
+</html>
